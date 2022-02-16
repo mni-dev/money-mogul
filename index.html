@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
+    <!-- This is CSS link -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- This is Bootstrap Link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -14,37 +16,40 @@
     </header>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row row-cols-md-2">
                <div class="col-sm-12">
                 <img src="images/money.jpg" alt="">
                </div>
+               <!-- Income, Expenses & Balance Section -->
                <div class="col-sm-12">
                 <h3>Income</h3>
                 <label for="income">Income:</label>
-                <input type="number" value="0">
+                <input type="number" value="1" id="income">
                 <h3>Expenses</h3>
-                <label for="expenses">Food:</label>
-                <input type="number" name="expenses" id="expenses"> <br>
+                <label for="food">Food:</label>
+                <input type="number" name="food" id="food"> <br>
                 <label for="rent">Rent:</label>
                 <input type="number" id="rent"> <br>
                 <label for="clothes">Clothes:</label>
                 <input type="number" id="clothes"> <br>
-                <button>Calculate</button> <br>
-                <h3>Total Expense: <span id="total-expense">0</span></h3>
-                <h3>Balance: <span id="balance">0</span> </h3>
+                <button id="btn-calculate">Calculate</button> <br>
+                <h3>Total Expense:<span id="total-expense">0</span>
+                </h3>
+                <h3>Balance:<span id="balance">0</span> 
+                </h3>
+                <!-- Save & Balance Section -->
                 <label for="save">Save:</label>
                 <input type="number" name="save" id="save">%
-                <button id="save-btn">Save</button> <br>
-                <h3>Saving Account: <span id="saving-amount">0</span></h3>
-                <h3>Remaining Balance: <span id="remaining-balance">0</span> </h3>
+                <button id="btn-save">Save</button> <br>
+                <h3>Saving Account:<span id="saving-amount">0</span>
+                </h3>
+                <h3>Remaining Balance:<span id="remaining-balance">0</span>
+                </h3>
                </div>
             </div>
         </div>
-             
-          
-        
     </main>
     <script src="js/index.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+     
 </body>
 </html>
