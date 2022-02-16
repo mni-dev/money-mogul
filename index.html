@@ -24,7 +24,7 @@
                <div class="col-sm-12">
                 <h3>Income</h3>
                 <label for="income">Income:</label>
-                <input type="number" value="1" id="income">
+                <input type="number" id="income">
                 <h3>Expenses</h3>
                 <label for="food">Food:</label>
                 <input type="number" name="food" id="food"> <br>
@@ -40,7 +40,7 @@
                 <!-- Save & Balance Section -->
                 <label for="save">Save:</label>
                 <input type="number" name="save" id="save">%
-                <button id="btn-save">Save</button> <br>
+                <button id="btn-save" onclick="savings()">Save</button> <br>
                 <h3>Saving Amount:<span id="saving-amount">0</span>
                 </h3>
                 <h3>Remaining Balance:<span id="remaining-balance">0</span>
