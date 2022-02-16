@@ -29,6 +29,14 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     balance.innerText = balanceAmount;
      
 })
-function totalExpenses(){
+document.getElementById('btn-save').addEventListener('click', function(){
+    const incomeInput = document.getElementById('income');
+    const incomeAmount = incomeInput.value;
+    const saveInput = document.getElementById('save');
+    const saveAmount = saveInput.value;
+    const savingAmount = document.getElementById('saving-amount');
+    savingAmount.innerText = parseFloat(incomeAmount) / parseFloat(saveAmount);
+    // console.log(saveAmount);
+    // console.log(savingAmount);
 
-}
+}) 
