@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Master</title>
-    <!-- This is CSS link -->
+    <!----------------------- This is CSS link ---------------------------->
     <link rel="stylesheet" href="css/index.css">
-    <!-- This is Bootstrap Link -->
+    <!------------------- This is Bootstrap Link -------------------------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -16,40 +16,44 @@
     </header>
     <main>
         <div class="container">
-            <div class="row row-cols-lg-2 pt-5 px-3">
+            <div class="row row-cols-lg-2 row-cols-sm-1 pt-5 mx-3">
                 <div class="col-sm-12 mb-5" id="img-div">
                     <img src="images/money.jpg" alt="picture of a man counting dollars">
                 </div>
                 <!-----------------------------------------
                  Income, Expenses & Balance Section
                 ------------------------------------------>
-                <div class="col-sm-12 ps-5 pb-5 mb-5 bg-secondary" id="money-field">
-                    <h3>Income</h3>
-                    <label for="income">Income:</label> <br>
-                    <input type="number" id="income" placeholder="enter income amount">
-                    <h3>Expenses</h3>
-                    <label for="food">Food:</label> <br>
-                    <input type="number" name="food" id="food"> <br>
-                    <label for="rent">Rent:</label> <br>
-                    <input type="number" id="rent"> <br>
-                    <label for="clothes">Clothes:</label> <br>
-                    <input type="number" id="clothes"> <br>
+                <div class="col-sm-12 text-center bg-secondary" id="money-field">
+                     
+                        <h3 class="fs-4">Income</h3>
+                    <label for="income">Income:</label>  
+                    <input type="text" id="income" placeholder="enter income amount">
+                    <h3 class="fs-4">Expenses</h3>
+                    <label for="food">Food:</label> 
+                    <input type="text" name="food" id="food"> <br>
+                    <label for="rent">Rent:</label> 
+                    <input type="text" id="rent"> <br>
+                    <label for="clothes">Clothes:</label>  
+                    <input type="text" id="clothes"> <br>
                     <button id="btn-calculate">Calculate</button> <br>
-                    <h3>Total Expense: <span id="total-expense">0</span>
+                    <h3 class="fs-4">Total Expense: <span id="total-expense">0</span>
                     </h3>
-                    <h3>Balance: <span id="balance">0</span>
+                    <h3 class="fs-4">Balance: <span id="balance">0</span>
                     </h3>
+                    
 
                     <!--------------------------------------------------
                                 Save & Balance Section 
                 --------------------------------------------------->
+                 
                     <label for="save">Save:</label>
-                    <input type="number" name="save" id="save"> <span style="font-size: 18px; color: white;">%</span>
+                    <input type="text" name="save" id="save"> <span style="font-size: 18px; color: white;">%</span>
                     <button id="btn-save" onclick="savings()">Save</button> <br>
-                    <h3>Saving Amount: <span id="saving-amount">0</span>
+                    <h3 class="fs-4">Saving Amount: <span id="saving-amount">0</span>
                     </h3>
-                    <h3>Remaining Balance: <span id="remaining-balance">0</span>
+                    <h3 class="fs-4">Remaining Balance: <span id="remaining-balance">0</span>
                     </h3>
+                    
                 </div>
             </div>
         </div>
