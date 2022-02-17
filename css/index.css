@@ -34,12 +34,6 @@ div> input {
 div>input:hover {
     background-color: rgba(245, 240, 240, 0.952);
 }
-/* #saving-div{
-    width: 90%;
-}
-#saving-div>label{
-    width: 50px;
-} */
 
 /*------------------------------------
                 This is Btn Style
@@ -55,3 +49,7 @@ div>input:hover {
 #btn-calculate{
     margin:20px 0;
 }
+
+/* ---------------------------------------------------------
+                    THE END
+---------------------------------------------------------- */

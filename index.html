@@ -16,16 +16,15 @@
     </header>
     <main>
         <div class="container">
-            <div class="row row-cols-lg-2 row-cols-sm-1 pt-5 mx-3">
+            <div class="row row-cols-lg-2 pt-5 mx-3">
                 <div class="col-sm-12 mb-5" id="img-div">
                     <img src="images/money.jpg" alt="picture of a man counting dollars">
                 </div>
-                <!-----------------------------------------
-                 Income, Expenses & Balance Section
-                ------------------------------------------>
-                <div class="col-sm-12 text-center bg-secondary" id="money-field">
-                     
-                        <h3 class="fs-4">Income</h3>
+                <!---------------------------------------------------
+                        Income, Expenses & Balance Section
+                ---------------------------------------------------->
+                <div class="col-sm-12 text-center bg-secondary" id="money-field">  
+                    <h3 class="fs-4">Income</h3>
                     <label for="income">Income:</label>  
                     <input type="text" id="income" placeholder="enter income amount">
                     <h3 class="fs-4">Expenses</h3>
@@ -44,23 +43,22 @@
 
                     <!--------------------------------------------------
                                 Save & Balance Section 
-                --------------------------------------------------->
+                    --------------------------------------------------->
                  
                     <label for="save">Save:</label>
-                    <input type="text" name="save" id="save"> <span style="font-size: 18px; color: white;">%</span>
+                    <input type="text" name="save" id="save"> <span style="font-size: 18px; color:white;">%</span>
                     <button id="btn-save" onclick="savings()">Save</button> <br>
                     <h3 class="fs-4">Saving Amount: <span id="saving-amount">0</span>
                     </h3>
                     <h3 class="fs-4">Remaining Balance: <span id="remaining-balance">0</span>
-                    </h3>
-                    
+                    </h3>  
                 </div>
             </div>
         </div>
     </main>
-    <!----------------------------------
+    <!-------------------------------------------------
                      This is JS Link
-    ------------------------------------>
+    -------------------------------------------------->
     <script src="js/index.js"></script>
 
 </body>
