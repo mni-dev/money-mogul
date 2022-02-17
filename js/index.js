@@ -13,6 +13,7 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     // console.log(foodCost);
     foodInput.value = foodCost;
     // console.log(foodCost);
+
     const rentInput = document.getElementById('rent');
     const rentCost = rentInput.value;
     rentInput.value = rentCost;
@@ -29,9 +30,9 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     //Balance after expenses
     const balance = document.getElementById('balance');
     const balanceAmount = parseFloat(incomeAmount) - totalExpenses;
-    balance.innerText = balanceAmount;
-     
+    balance.innerText = balanceAmount; 
 })
+
 /*---------------------------------------------------------
                         Saving Section
 ----------------------------------------------------------*/

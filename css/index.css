@@ -1,17 +1,46 @@
-body {
-    box-sizing: border-box;
-}
+
 .container {
     background-color: aliceblue;
 }
 .container > div{
-    margin: 0 50px;
+    height: auto;
 }
+h3 {
+    color:rgba(211, 224, 224, 0.959);
+    font-size: 1.2rem;
+}
+/*------------------------------------
+                This is Div Style
+--------------------------------------*/
 #img-div> img{
     width: 100%;
-    height: 500px;
+}
+div>label {
+    font-size: 20px;
+    color: rgba(252, 209, 209, 0.966);
+}
+div> input {
+    margin-bottom: 10px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+div>input:hover {
+    background-color: rgba(245, 240, 240, 0.952);
 }
 
-#money-field {
-    height: 500px;
+/*------------------------------------
+                This is Btn Style
+--------------------------------------*/
+#btn-calculate, #btn-save{
+    border: none;
+    border-radius: 5px;
+    padding:0 15px;
+    font-size: 20px;
+    color:blue;
+    font-weight: bolder;
+}
+#btn-calculate{
+    margin:20px 0;
 }
