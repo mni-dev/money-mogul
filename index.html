@@ -10,18 +10,18 @@
     <!-- This is Bootstrap Link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="">
     <header>
-        <h1>Money Mogul</h1>
+        <h1 class="text-center">Money Mogul</h1>
     </header>
     <main>
         <div class="container">
-            <div class="row row-cols-md-2">
-               <div class="col-sm-12">
-                <img src="images/money.jpg" alt="">
+            <div class="row row-cols-md-2 mx-auto">
+               <div class="col-sm-12" id="img-div">
+                <img src="images/money.jpg" alt="picture of a man counting dollars">
                </div>
-               <!-- Income, Expenses & Balance Section -->
-               <div class="col-sm-12">
+               <!---------------- Income, Expenses & Balance Section---------------->
+               <div class="col-sm-12 bg-secondary" id="money-field">
                 <h3>Income</h3>
                 <label for="income">Income:</label>
                 <input type="number" id="income">
@@ -37,7 +37,8 @@
                 </h3>
                 <h3>Balance:<span id="balance">0</span> 
                 </h3>
-                <!-- Save & Balance Section -->
+
+                <!------------------- Save & Balance Section -------------------->
                 <label for="save">Save:</label>
                 <input type="number" name="save" id="save">%
                 <button id="btn-save" onclick="savings()">Save</button> <br>
